@@ -49,7 +49,7 @@ categories: jekyll update
 |      **Blazer** Mid 77 Vintage Slam Jam(**White**)      | <img src="https://stockx-360.imgix.net/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Images/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Lv2/img01.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1554253378" width="200"/> |  $100  |   $470 - $486    |     381.0%      |    **455.5%**     |
 |   **Yeezy** Boost 350 V2 Tail Light(**Grey, Orange**)   | <img src="https://stockx-360.imgix.net/adidas-Yeezy-Boost-350-V2-Tail-Light/Images/adidas-Yeezy-Boost-350-V2-Tail-Light/Lv2/img36.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1584757351" width="200"/> |  $220  |   $289 - $336    |      31.8%      |     **82.0%**     |
 
-<h6 align="right">The price data below is based on March 26, 2020 </h6>
+<h6 align="right">The price data above is based on March 26, 2020 </h6>
 
 
 
@@ -70,7 +70,7 @@ categories: jekyll update
 
 ## Motivation
 
-<img src="/assets/images/red_yeezy.jpg" align = "right" width = 200/>
+<img src="/assets/images/red_yeezy.jpg" width="200" align = "right" />
 
 
 The above is the famous Red Nike Yeezy. Its retail price is $250, and the latest resale price is $6,200, marked up by nearly 2400%. The high resale premium of this pair is not a single event. The once niche market of sneaker resale has grown to become a $2 billion market, and it is projected to reach $6 billion by 2025. Within the sneaker resale market, StockX is one of the largest platforms. The website operates like a stock exchange, where users can place a bidding or asking prices, and a deal is made whenever there’s a match. What is so valuable for us is that the platform offers transparent and actionable data. Using such data, we want to build a predictive model to identify undervalued sneakers, which resellers can invest in now and sell at higher price later.
@@ -217,7 +217,7 @@ The first pair listed is Air Jordan 1 by Travis Scott, released in May, 2019. If
 | [Blazer Mid 77 Vintage Slam Jam](https://stockx.com/nike-blazer-mid-77-vintage-white-black) | <font size = "2"><b>Features: </b> blazer(0.58), White(0.71)<br><b>Current Price Premium:</b> 381.0%<br><b>Predicted Price Premium: 455.5%</b></font> | <img src="https://stockx-360.imgix.net/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Images/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Lv2/img01.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1554253378" width="150"/> |
 | [Yeezy Boost 350 V2 Tail Light](https://stockx.com/adidas-yeezy-boost-350-v2-tail-light) | <font size = "2"><b>Features:</b> blazer(0.58), White(0.71)<br><b>Current Price Premium:</b> 381.0%<br><b>Predicted Price Premium: 455.5%</b></font> | <img src="https://stockx-360.imgix.net/adidas-Yeezy-Boost-350-V2-Tail-Light/Images/adidas-Yeezy-Boost-350-V2-Tail-Light/Lv2/img36.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1584757351" width="150"/> |
 
-<h6 align="right"><font size="2">The price data below is based on March 26, 2020
+<h6 align="right"><font size="2">The price data above is based on March 26, 2020
 </font></h6>
 
 ## Limitation

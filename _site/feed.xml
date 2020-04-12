@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-12T14:07:36-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Machine Learning Project Folder</title><subtitle>You stay classy!😊 Happy Blogging..:)</subtitle><entry><title type="html">StockX Price Premium Predictive Analysis</title><link href="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html" rel="alternate" type="text/html" title="StockX Price Premium Predictive Analysis" /><published>2020-04-08T08:42:17-04:00</published><updated>2020-04-08T08:42:17-04:00</updated><id>http://localhost:4000/jekyll/update/2020/04/08/StockX%20Predictive%20Modeling</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html">&lt;h1 align=&quot;center&quot;&gt;StockX Price Premium Predictive Analysis
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-12T17:03:44-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Machine Learning Project Folder</title><subtitle>You stay classy!😊 Happy Blogging..:)</subtitle><entry><title type="html">StockX Price Premium Predictive Analysis</title><link href="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html" rel="alternate" type="text/html" title="StockX Price Premium Predictive Analysis" /><published>2020-04-08T08:42:17-04:00</published><updated>2020-04-08T08:42:17-04:00</updated><id>http://localhost:4000/jekyll/update/2020/04/08/StockX%20Predictive%20Modeling</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html">&lt;h1 align=&quot;center&quot;&gt;StockX Price Premium Predictive Analysis
 &lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/banner.png&quot; alt=&quot;banner&quot; /&gt;&lt;/p&gt;
@@ -94,7 +94,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h6 align=&quot;right&quot;&gt;The price data below is based on March 26, 2020 &lt;/h6&gt;
+&lt;h6 align=&quot;right&quot;&gt;The price data above is based on March 26, 2020 &lt;/h6&gt;
 
 &lt;h2 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h2&gt;
 
@@ -121,9 +121,7 @@
 
 &lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
 
-&lt;p align=&quot;right&quot;&gt;
-&lt;img src=&quot;https://stockx-360.imgix.net/Nike-Air-Yeezy-2-Red-October/Images/Nike-Air-Yeezy-2-Red-October/Lv2/img19.jpg&quot; align=&quot;right&quot; width=&quot;200&quot; /&gt; 
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/red_yeezy.jpg&quot; width=&quot;200&quot; align=&quot;right&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The above is the famous Red Nike Yeezy. Its retail price is $250, and the latest resale price is $6,200, marked up by nearly 2400%. The high resale premium of this pair is not a single event. The once niche market of sneaker resale has grown to become a $2 billion market, and it is projected to reach $6 billion by 2025. Within the sneaker resale market, StockX is one of the largest platforms. The website operates like a stock exchange, where users can place a bidding or asking prices, and a deal is made whenever there’s a match. What is so valuable for us is that the platform offers transparent and actionable data. Using such data, we want to build a predictive model to identify undervalued sneakers, which resellers can invest in now and sell at higher price later.&lt;/p&gt;
 
@@ -330,7 +328,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h6 align=&quot;right&quot;&gt;&lt;font size=&quot;2&quot;&gt;The price data below is based on March 26, 2020
+&lt;h6 align=&quot;right&quot;&gt;&lt;font size=&quot;2&quot;&gt;The price data above is based on March 26, 2020
 &lt;/font&gt;&lt;/h6&gt;
 
 &lt;h2 id=&quot;limitation&quot;&gt;Limitation&lt;/h2&gt;
