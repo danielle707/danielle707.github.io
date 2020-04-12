@@ -70,7 +70,7 @@ categories: jekyll update
 
 ## Motivation
 
-<img src="assets/images/red_yeezy.jpg" align = "right" width = 200/>
+<img src="/assets/images/red_yeezy.jpg" align = "right" width = 200/>
 
 
 The above is the famous Red Nike Yeezy. Its retail price is $250, and the latest resale price is $6,200, marked up by nearly 2400%. The high resale premium of this pair is not a single event. The once niche market of sneaker resale has grown to become a $2 billion market, and it is projected to reach $6 billion by 2025. Within the sneaker resale market, StockX is one of the largest platforms. The website operates like a stock exchange, where users can place a bidding or asking prices, and a deal is made whenever there’s a match. What is so valuable for us is that the platform offers transparent and actionable data. Using such data, we want to build a predictive model to identify undervalued sneakers, which resellers can invest in now and sell at higher price later.
