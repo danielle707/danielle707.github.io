@@ -138,8 +138,7 @@ In our project, we tried two types of machine learning models, linear and tree-b
 - **Linear Model - Lasso**
 
   According to our Exploratory Data Analysis, certain styles and colors (i.e. white) have over emphasizing power. In consideration of outliers and overfitting issues, we utilized the Lasso model to ensure regularization.
-
-  <p align = center><img align = "center" src = "/assets/images/lasso.svg" width = "280"/></p>
+<img src = "/assets/images/lasso.svg" width = "280" align = "center"/>
 
 ```python
 lasso = Lasso()
