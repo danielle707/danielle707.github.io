@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "StockX Price Premium Preditive Analysis"
+title:  "StockX Price Premium Predictive Analysis"
 date:   2020-04-08 08:42:17 -0400
 categories: jekyll update
 ---
 
-<h1 align="center">StockX Price Premium Preditive Analysis
+<h1 align="center">StockX Price Premium Predictive Analysis
 </h1>
 
 ![banner](/assets/images/banner.png)
@@ -71,7 +71,9 @@ categories: jekyll update
 ## Motivation
 
 <p align = "right">
-<img src="https://stockx-360.imgix.net/Nike-Air-Yeezy-2-Red-October/Images/Nike-Air-Yeezy-2-Red-October/Lv2/img19.jpg" align = "right" width = 200/> </p>
+<img src="https://stockx-360.imgix.net/Nike-Air-Yeezy-2-Red-October/Images/Nike-Air-Yeezy-2-Red-October/Lv2/img19.jpg" align = "right" width = 200/> 
+</p>
+
 
 The above is the famous Red Nike Yeezy. Its retail price is $250, and the latest resale price is $6,200, marked up by nearly 2400%. The high resale premium of this pair is not a single event. The once niche market of sneaker resale has grown to become a $2 billion market, and it is projected to reach $6 billion by 2025. Within the sneaker resale market, StockX is one of the largest platforms. The website operates like a stock exchange, where users can place a bidding or asking prices, and a deal is made whenever there’s a match. What is so valuable for us is that the platform offers transparent and actionable data. Using such data, we want to build a predictive model to identify undervalued sneakers, which resellers can invest in now and sell at higher price later.
 
