@@ -1,11 +1,11 @@
-I"!u<h1 align="center">StockX Price Premium Preditive Analysis
+I"�u<h1 align="center">StockX Price Premium Preditive Analysis
 </h1>
 
 <p><img src="/assets/images/banner.png" alt="banner" /></p>
 
 <h4 align="center">Use Machine Learning to learn undervalued sneakers</h4>
 
-<p><a href="https://www.linkedin.com/in/zhidanwang/"><img src="https://img.shields.io/badge/Linked-In-informational" /></a></p>
+<p><a href="https://www.linkedin.com/in/zhidanwang/"><img src="https://img.shields.io/badge/Linked-In-informational" /></a> <a href="https://github.com/danielle707/StockX-Predictive-Modeling"><img src="https://img.shields.io/badge/GitHub-🍺-brightgreen" /></a></p>
 
 <h2 id="prpject-overview">PRPJECT OVERVIEW</h2>
 
@@ -132,7 +132,7 @@
 
 <p>Looking at price premium, we could easily observe that it is heavily skewed to the right. Most resale transactions were marked up between 0% to 500%, yet there are some extreme transactions whose markups were over 2000%. As such, we would first conduct anomaly detection to examine those points on the very high end and find common features among them.</p>
 
-<p><img src="/assets/images/y_plot.png" alt="targetvalue" title="Histogram Plot on Y" /> <img src="/assets/images/volinplot.png" alt="voilinplot" title="Violin Plot on Y" /></p>
+<p><img src="/assets/images/y_plot.png" width="300" /> <img src="/assets/images/volinplot.png" width="300" /></p>
 
 <h3 id="anomaly-detection">Anomaly Detection</h3>
 
@@ -156,7 +156,7 @@
   <li><strong>Step 2</strong> Create anomaly lists and compare it to non-anomaly points</li>
 </ul>
 
-<p><img align="left" src="data/media/anomalycomp.png" /></p>
+<p><img src="/assets/images/anomalycomp.png" /></p>
 
 <table>
   <thead>
@@ -204,13 +204,13 @@
 
 <p><strong>Region</strong> California and New York overall saw the highest price premium. However, this doesn’t mean these two states have the highest per capita premium. Stay around for further analysis in per capital level.</p>
 
-<p><img src="/assets/images/ano_brand.png" width="300" /> <img src="/assets/images/ano_color.png" width="300" /> <img src="/assets/images/ano_region.png" width="300" /></p>
+<p><img src="/assets/images/ano_brand.png" width="240" /> <img src="/assets/images/ano_color.png" width="240" /> <img src="/assets/images/ano_region.png" width="240" /></p>
 
 <h3 id="time-feature">Time Feature</h3>
 
 <p>Statistically, the best time to resell is 3 to 5 weeks before the release date 0. The worst time to resell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are willing to pay higher premiums.</p>
 
-<p><img src="/assets/images/alltime.png" width="270" /> <img src="/assets/images/allregion.png" width="280" /> <img src="/assets/images/allstyle.png" width="350" /></p>
+<p><img src="/assets/images/alltime.png" width="240" /> <img src="/assets/images/allregion.png" width="240" /> <img src="/assets/images/allstyle.png" width="240" /></p>
 
 <ul>
   <li><strong>Time effect on Top 3 Nike Brands</strong></li>
@@ -218,7 +218,7 @@
 
 <p>The most sale Nike brands are Air Jordan, Presto and Zoom. Among these sneakers, Air Jordan has the highest premium even after long time. The common golden time period to have high price premium. are after day 200. White color has relative competitive premium against others.</p>
 
-<p><img src="/assets/images/timeaj.png" width="300" /> <img src="/assets/images/timepresto.png" width="300" /> <img src="/assets/images/timezoom.png" width="300" /></p>
+<p><img src="/assets/images/timeaj.png" width="240" /> <img src="/assets/images/timepresto.png" width="240" /> <img src="/assets/images/timezoom.png" width="240" /></p>
 
 <ul>
   <li><strong>Time effect on Yeezy</strong></li>
@@ -261,7 +261,7 @@
 
     <p>According to our Exploratory Data Analysis, certain styles and colors (i.e. white) have over emphasizing power. In consideration of outliers and overfitting issues, we utilized the Lasso model to ensure regularization.</p>
 
-    <p>&lt;img align = “center” src = /assets/images/lasso.svg” width = “280”/&gt;</p>
+    <p><img align="center" src="/assets/images/lasso.svg" width="280" /></p>
   </li>
 </ul>
 
@@ -358,7 +358,7 @@
 
 <h2 id="prediction-result">Prediction Result</h2>
 
-<p>The Lasso coefficients are as above. Orange blocks represents negative coefficients, and blues represents positive coefficients. In terms of styles, AirJordan is the most lucrative, with an additional price premium of 324%. In terms of colors, red and tan will boost price premium, while blue seems to hurt resale prices. Further, as the number of sales increase, the price premium will go down. <img src="/assets/imagesfeatureSig.png" alt="featureSig" /></p>
+<p>The Lasso coefficients are as above. Orange blocks represents negative coefficients, and blues represents positive coefficients. In terms of styles, AirJordan is the most lucrative, with an additional price premium of 324%. In terms of colors, red and tan will boost price premium, while blue seems to hurt resale prices. Further, as the number of sales increase, the price premium will go down. <img src="/assets/images/featureSig.png" alt="featureSig" /></p>
 
 <p>According to our prediction model, sneakers of certain styles (i.e. AirJordan 1 and blazer) and of certain colors (i.e.red and tan) are the most investable. Based on this knowledge, we tried to find some undervalued sneakers, which we can invest in now  and sell higher later. We listed some proposed candidates below.</p>
 
@@ -375,28 +375,28 @@
   <tbody>
     <tr>
       <td style="text-align: center"><a href="https://stockx.com/air-jordan-1-retro-high-travis-scott">Air Jordan 1 Retro High Travis Scott</a></td>
-      <td style="text-align: left"><font size="2"> **Features:** air-jordan(3.24)<br /> Tan/Brown(1.83) <br />**Current Price Premium: 497.4%** <br />**Predicted Price Premium: 802.0%**</font></td>
-      <td style="text-align: center"><img src="https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-Travis-Scott/Images/Air-Jordan-1-Retro-High-Travis-Scott/Lv2/img01.jpg?auto=format,compress&amp;w=559&amp;q=90&amp;dpr=2&amp;updated_at=1550180948" width="200" /></td>
+      <td style="text-align: left"><font size="2"><b> Features: </b>air-jordan(3.24)<br /> Tan/Brown(1.83) <br /><b>Current Price Premium: 497.4%</b><br /><b>Predicted Price Premium: 802.0%</b></font></td>
+      <td style="text-align: center"><img src="https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-Travis-Scott/Images/Air-Jordan-1-Retro-High-Travis-Scott/Lv2/img01.jpg?auto=format,compress&amp;w=559&amp;q=90&amp;dpr=2&amp;updated_at=1550180948" width="150" /></td>
     </tr>
     <tr>
       <td style="text-align: center"><a href="https://stockx.com/nike-blazer-mid-77-vintage-white-black">Blazer Mid 77 Vintage Slam Jam</a></td>
-      <td style="text-align: left"><font size="2">**Features: ** blazer(0.58), White(0.71)<br />**Current Price Premium: 381.0%**<br />**Predicted Price Premium: 455.5%**</font></td>
-      <td style="text-align: center"><img src="https://stockx-360.imgix.net/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Images/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Lv2/img01.jpg?auto=format,compress&amp;w=559&amp;q=90&amp;dpr=2&amp;updated_at=1554253378" width="200" /></td>
+      <td style="text-align: left"><font size="2"><b>Features: </b> blazer(0.58), White(0.71)<br /><b>Current Price Premium:</b> 381.0%<br /><b>Predicted Price Premium: 455.5%</b></font></td>
+      <td style="text-align: center"><img src="https://stockx-360.imgix.net/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Images/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Lv2/img01.jpg?auto=format,compress&amp;w=559&amp;q=90&amp;dpr=2&amp;updated_at=1554253378" width="150" /></td>
     </tr>
     <tr>
       <td style="text-align: center"><a href="https://stockx.com/adidas-yeezy-boost-350-v2-tail-light">Yeezy Boost 350 V2 Tail Light</a></td>
-      <td style="text-align: left"><font size="2">**Features:** blazer(0.58), White(0.71)<br />**Current Price Premium: 381.0%**<br />**Predicted Price Premium: 455.5%**</font></td>
-      <td style="text-align: center"><img src="https://stockx-360.imgix.net/adidas-Yeezy-Boost-350-V2-Tail-Light/Images/adidas-Yeezy-Boost-350-V2-Tail-Light/Lv2/img36.jpg?auto=format,compress&amp;w=559&amp;q=90&amp;dpr=2&amp;updated_at=1584757351" width="200" /></td>
+      <td style="text-align: left"><font size="2"><b>Features:</b> blazer(0.58), White(0.71)<br /><b>Current Price Premium:</b> 381.0%<br /><b>Predicted Price Premium: 455.5%</b></font></td>
+      <td style="text-align: center"><img src="https://stockx-360.imgix.net/adidas-Yeezy-Boost-350-V2-Tail-Light/Images/adidas-Yeezy-Boost-350-V2-Tail-Light/Lv2/img36.jpg?auto=format,compress&amp;w=559&amp;q=90&amp;dpr=2&amp;updated_at=1584757351" width="150" /></td>
     </tr>
   </tbody>
 </table>
 
-<h6 align="right"><font size="2">*The price data below is based on March 26, 2020&lt;/h6&gt; 
-
-## Limitation
-
-**1. Time Limitation** The data we utilized only cover sales from 2017 to 2019. Due to the changing tendency of the sneaker resale market, the model’s predictive power might be less stable in far futures.
-
-**2. Brand Limitation** Since our data only covers two major brands -- Yeezy and Nike Off-White, it might not be appropriate to generalize our predictive model to other brands of sneakers.
+<h6 align="right"><font size="2">The price data below is based on March 26, 2020
 </font></h6>
+
+<h2 id="limitation">Limitation</h2>
+
+<p><strong>1. Time Limitation</strong> The data we utilized only cover sales from 2017 to 2019. Due to the changing tendency of the sneaker resale market, the model’s predictive power might be less stable in far futures.</p>
+
+<p><strong>2. Brand Limitation</strong> Since our data only covers two major brands – Yeezy and Nike Off-White, it might not be appropriate to generalize our predictive model to other brands of sneakers.</p>
 :ET
