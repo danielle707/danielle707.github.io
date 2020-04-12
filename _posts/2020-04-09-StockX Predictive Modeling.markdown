@@ -71,7 +71,7 @@ categories: jekyll update
 ## Motivation
 
 <p align = "right">
-<img src="https://stockx-360.imgix.net/Nike-Air-Yeezy-2-Red-October/Images/Nike-Air-Yeezy-2-Red-October/Lv2/img19.jpg" align = "right" width = 200/> 
+<img src="assets/images/red_yeezy.jpg" align = "right" width = 200/> 
 </p>
 
 
