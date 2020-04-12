@@ -10,9 +10,20 @@ categories: jekyll update
 
 ![banner](/assets/images/banner.png)
 
-<h4 align="center">Use Machine Learning to learn undervalued sneakers</h4>                                                    
+<h4 align="center">Use Machine Learning to learn undervalued sneakers</h4>                        
 
-[<img src = "https://img.shields.io/badge/Linked-In-informational">](https://www.linkedin.com/in/zhidanwang/) [<img src = "https://img.shields.io/badge/GitHub-🍺-brightgreen">](https://github.com/danielle707/StockX-Predictive-Modeling) 
+<p align = "center">
+  <a href = "https://www.linkedin.com/in/zhidanwang/">
+    <img class = "post image" src = "https://img.shields.io/badge/Linked-In-informational" align = "center"/>
+  </a>
+  <a href = "https://github.com/danielle707/">
+    <img class = "post image" src = "https://img.shields.io/badge/GitHub-🍺-brightgreen" align = "center"/>
+  </a>
+  <a href = "https://github.com/danielle707/StockX-Predictive-Modeling/graphs/contributors">
+    <img class = "post image" src = "https://img.shields.io/github/contributors/danielle707/StockX-Predictive-Modeling" align = "center"/>
+  </a>
+</p>
+
 
 
 ## PRPJECT OVERVIEW
@@ -47,7 +58,6 @@ categories: jekyll update
 * [Motivation](#motivation)
 * [Data Source](#data-source)
 * [Exploratory Data Analysis](#exploratory-data-analysis)
-  * [Anomaly Dectection](#anomaly-detection)
   * [Time Feature](#time-feature)
   * [Color Feature](#color-feature)
   * [Region Feature](#region-feature)
@@ -60,7 +70,8 @@ categories: jekyll update
 
 ## Motivation
 
-<img src="https://stockx-360.imgix.net/Nike-Air-Yeezy-2-Red-October/Images/Nike-Air-Yeezy-2-Red-October/Lv2/img19.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1538080256" width = 300/>
+<p align = "right">
+<img src="https://stockx-360.imgix.net/Nike-Air-Yeezy-2-Red-October/Images/Nike-Air-Yeezy-2-Red-October/Lv2/img19.jpg" align = "right" width = 200/> </p>
 
 The above is the famous Red Nike Yeezy. Its retail price is $250, and the latest resale price is $6,200, marked up by nearly 2400%. The high resale premium of this pair is not a single event. The once niche market of sneaker resale has grown to become a $2 billion market, and it is projected to reach $6 billion by 2025. Within the sneaker resale market, StockX is one of the largest platforms. The website operates like a stock exchange, where users can place a bidding or asking prices, and a deal is made whenever there’s a match. What is so valuable for us is that the platform offers transparent and actionable data. Using such data, we want to build a predictive model to identify undervalued sneakers, which resellers can invest in now and sell at higher price later.
 
@@ -82,50 +93,6 @@ Looking at price premium, we could easily observe that it is heavily skewed to t
 
 <img src = "/assets/images/y_plot.png" width="300"/> <img src = "/assets/images/volinplot.png" width = "300"/>
 
-### Anomaly Detection
-
-Since the target variable is non-negative and heavily right skewed, we would take the logrithm to have more robust results in outlier detection.
-
-- **Step 1** Train an isolation forest on target value and use decision rules to find outliers.
-
-~~~python
-model=IsolationForest(n_estimators=100, max_samples='auto', contamination= 0.05 ,max_features=1.0)
-model.fit(y[['Pct_change']])
-y['scores']=model.decision_function(y[['Pct_change']])
-y['anomaly']=model.predict(y[['Pct_change']])
-
-#IsolationForest(behaviour='deprecated', bootstrap=False, contamination=0.05,
-#                max_features=1.0, max_samples='auto', n_estimators=100,
-#                n_jobs=None, random_state=None, verbose=0, warm_start=False)
-~~~
-
-- **Step 2** Create anomaly lists and compare it to non-anomaly points
-
-<img src="/assets/images/anomalycomp.png"/> 
-
-| Metric | whole | normal | Anamoly |
-| :----: | :---: | :----: | :-----: |
-|  Mean  | 1.25  |  1.03  |  5.40   |
-| Median | 0.70  |  0.68  |  5.00   |
-
-Most Anomaly points lie on the right tail of distribution, and their cut-off(using median statistics) is approximately exp(5), this is a cruicial indicator that if our prediction is beyond 100 times premium, there is large probability the point is an outlier and some statistically important features are underneath the pair of shoe. 
-
-- **Step 3** Explore anomaly points
-
-Group anomaly points on their three features: brand, color and region, we could peek into what features are heavily weighted in our dataset.
-
-**Style** The top three styles that saw extreme resale prices are Air Jordan, Presto, and Blazer. Note that these are all Nike sneakers. Among them, Air Jordan saw the highest price premium of over 2000%. Yeezy sneakers followed at the fourth place.
-
-**Color** White is the dominating color feature. There are two hypothesis on why its resale prices are high: 
-
-1. Most sneakers are white; 
-2. White is indeed a significant feature. 
-
-To test our hypothesis, we will further examine which specific sneakers contributed the most. 
-
-**Region** California and New York overall saw the highest price premium. However, this doesn't mean these two states have the highest per capita premium. Stay around for further analysis in per capital level.
-
-<img src="/assets/images/ano_brand.png" width="240"/> <img src="/assets/images/ano_color.png" width="240"/> <img src="/assets/images/ano_region.png" width="240"/> 
 
 ### Time Feature
 

@@ -1,11 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-12T01:09:17-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Danielle’s Project Blog</title><subtitle>Project Blogging..:)</subtitle><entry><title type="html">StockX Price Premium Preditive Analysis</title><link href="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html" rel="alternate" type="text/html" title="StockX Price Premium Preditive Analysis" /><published>2020-04-08T08:42:17-04:00</published><updated>2020-04-08T08:42:17-04:00</updated><id>http://localhost:4000/jekyll/update/2020/04/08/StockX%20Predictive%20Modeling</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html">&lt;h1 align=&quot;center&quot;&gt;StockX Price Premium Preditive Analysis
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-12T12:15:20-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Machine Learning Project Folder</title><subtitle>You stay classy!😊 Happy Blogging..:)</subtitle><entry><title type="html">StockX Price Premium Preditive Analysis</title><link href="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html" rel="alternate" type="text/html" title="StockX Price Premium Preditive Analysis" /><published>2020-04-08T08:42:17-04:00</published><updated>2020-04-08T08:42:17-04:00</updated><id>http://localhost:4000/jekyll/update/2020/04/08/StockX%20Predictive%20Modeling</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html">&lt;h1 align=&quot;center&quot;&gt;StockX Price Premium Preditive Analysis
 &lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/banner.png&quot; alt=&quot;banner&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 align=&quot;center&quot;&gt;Use Machine Learning to learn undervalued sneakers&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/in/zhidanwang/&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Linked-In-informational&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;https://github.com/danielle707/StockX-Predictive-Modeling&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/GitHub-🍺-brightgreen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;a href=&quot;https://www.linkedin.com/in/zhidanwang/&quot;&gt;
+    &lt;img class=&quot;post image&quot; src=&quot;https://img.shields.io/badge/Linked-In-informational&quot; align=&quot;center&quot; /&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;https://github.com/danielle707/&quot;&gt;
+    &lt;img class=&quot;post image&quot; src=&quot;https://img.shields.io/badge/GitHub-🍺-brightgreen&quot; align=&quot;center&quot; /&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;https://github.com/danielle707/StockX-Predictive-Modeling/graphs/contributors&quot;&gt;
+    &lt;img class=&quot;post image&quot; src=&quot;https://img.shields.io/github/contributors/danielle707/StockX-Predictive-Modeling&quot; align=&quot;center&quot; /&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;h2 id=&quot;prpject-overview&quot;&gt;PRPJECT OVERVIEW&lt;/h2&gt;
 
@@ -93,7 +103,6 @@
   &lt;li&gt;&lt;a href=&quot;#data-source&quot;&gt;Data Source&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#exploratory-data-analysis&quot;&gt;Exploratory Data Analysis&lt;/a&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#anomaly-detection&quot;&gt;Anomaly Dectection&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#time-feature&quot;&gt;Time Feature&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#color-feature&quot;&gt;Color Feature&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#region-feature&quot;&gt;Region Feature&lt;/a&gt;&lt;/li&gt;
@@ -112,7 +121,8 @@
 
 &lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://stockx-360.imgix.net/Nike-Air-Yeezy-2-Red-October/Images/Nike-Air-Yeezy-2-Red-October/Lv2/img19.jpg?auto=format,compress&amp;amp;w=559&amp;amp;q=90&amp;amp;dpr=2&amp;amp;updated_at=1538080256&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot;&gt;
+&lt;img src=&quot;https://stockx-360.imgix.net/Nike-Air-Yeezy-2-Red-October/Images/Nike-Air-Yeezy-2-Red-October/Lv2/img19.jpg&quot; align=&quot;right&quot; width=&quot;200&quot; /&gt; &lt;/p&gt;
 
 &lt;p&gt;The above is the famous Red Nike Yeezy. Its retail price is $250, and the latest resale price is $6,200, marked up by nearly 2400%. The high resale premium of this pair is not a single event. The once niche market of sneaker resale has grown to become a $2 billion market, and it is projected to reach $6 billion by 2025. Within the sneaker resale market, StockX is one of the largest platforms. The website operates like a stock exchange, where users can place a bidding or asking prices, and a deal is made whenever there’s a match. What is so valuable for us is that the platform offers transparent and actionable data. Using such data, we want to build a predictive model to identify undervalued sneakers, which resellers can invest in now and sell at higher price later.&lt;/p&gt;
 
@@ -133,78 +143,6 @@
 &lt;p&gt;Looking at price premium, we could easily observe that it is heavily skewed to the right. Most resale transactions were marked up between 0% to 500%, yet there are some extreme transactions whose markups were over 2000%. As such, we would first conduct anomaly detection to examine those points on the very high end and find common features among them.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/y_plot.png&quot; width=&quot;300&quot; /&gt; &lt;img src=&quot;/assets/images/volinplot.png&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;anomaly-detection&quot;&gt;Anomaly Detection&lt;/h3&gt;
-
-&lt;p&gt;Since the target variable is non-negative and heavily right skewed, we would take the logrithm to have more robust results in outlier detection.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Step 1&lt;/strong&gt; Train an isolation forest on target value and use decision rules to find outliers.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsolationForest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_estimators&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_samples&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'auto'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contamination&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.05&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_features&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Pct_change'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'scores'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decision_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Pct_change'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'anomaly'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Pct_change'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;#IsolationForest(behaviour='deprecated', bootstrap=False, contamination=0.05,
-#                max_features=1.0, max_samples='auto', n_estimators=100,
-#                n_jobs=None, random_state=None, verbose=0, warm_start=False)
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Step 2&lt;/strong&gt; Create anomaly lists and compare it to non-anomaly points&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/anomalycomp.png&quot; /&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Metric&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;whole&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;normal&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Anamoly&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Mean&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1.25&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1.03&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;5.40&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Median&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.70&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.68&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;5.00&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Most Anomaly points lie on the right tail of distribution, and their cut-off(using median statistics) is approximately exp(5), this is a cruicial indicator that if our prediction is beyond 100 times premium, there is large probability the point is an outlier and some statistically important features are underneath the pair of shoe.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Step 3&lt;/strong&gt; Explore anomaly points&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Group anomaly points on their three features: brand, color and region, we could peek into what features are heavily weighted in our dataset.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Style&lt;/strong&gt; The top three styles that saw extreme resale prices are Air Jordan, Presto, and Blazer. Note that these are all Nike sneakers. Among them, Air Jordan saw the highest price premium of over 2000%. Yeezy sneakers followed at the fourth place.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Color&lt;/strong&gt; White is the dominating color feature. There are two hypothesis on why its resale prices are high:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Most sneakers are white;&lt;/li&gt;
-  &lt;li&gt;White is indeed a significant feature.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;To test our hypothesis, we will further examine which specific sneakers contributed the most.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Region&lt;/strong&gt; California and New York overall saw the highest price premium. However, this doesn’t mean these two states have the highest per capita premium. Stay around for further analysis in per capital level.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/ano_brand.png&quot; width=&quot;240&quot; /&gt; &lt;img src=&quot;/assets/images/ano_color.png&quot; width=&quot;240&quot; /&gt; &lt;img src=&quot;/assets/images/ano_region.png&quot; width=&quot;240&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;time-feature&quot;&gt;Time Feature&lt;/h3&gt;
 
@@ -375,7 +313,7 @@
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://stockx.com/air-jordan-1-retro-high-travis-scott&quot;&gt;Air Jordan 1 Retro High Travis Scott&lt;/a&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&lt;font size=&quot;2&quot;&gt;&lt;b&gt; Features: &lt;/b&gt;air-jordan(3.24)&lt;br /&gt; Tan/Brown(1.83) &lt;br /&gt;&lt;b&gt;Current Price Premium: 497.4%&lt;/b&gt;&lt;br /&gt;&lt;b&gt;Predicted Price Premium: 802.0%&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;font size=&quot;2&quot;&gt;&lt;b&gt; Features: &lt;/b&gt;air-jordan(3.24), Tan/Brown(1.83) &lt;br /&gt;&lt;b&gt;Current Price Premium: 497.4%&lt;/b&gt;&lt;br /&gt;&lt;b&gt;Predicted Price Premium: 802.0%&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-Travis-Scott/Images/Air-Jordan-1-Retro-High-Travis-Scott/Lv2/img01.jpg?auto=format,compress&amp;amp;w=559&amp;amp;q=90&amp;amp;dpr=2&amp;amp;updated_at=1550180948&quot; width=&quot;150&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
