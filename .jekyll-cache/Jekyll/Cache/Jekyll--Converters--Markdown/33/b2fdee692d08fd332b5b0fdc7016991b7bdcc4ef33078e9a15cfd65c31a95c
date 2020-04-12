@@ -1,4 +1,4 @@
-I"b<h1 align="center">StockX Price Premium Predictive Analysis
+I"�b<h1 align="center">StockX Price Premium Predictive Analysis
 </h1>
 
 <p><img src="/assets/images/banner.png" alt="banner" /></p>
@@ -9,7 +9,7 @@
   <a href="https://www.linkedin.com/in/zhidanwang/">
     <img class="post image" src="https://img.shields.io/badge/Linked-In-informational" align="center" />
   </a>
-  <a href="https://github.com/danielle707/">
+  <a href="https://github.com/danielle707/StockX-Predictive-Modeling">
     <img class="post image" src="https://img.shields.io/badge/GitHub-🍺-brightgreen" align="center" />
   </a>
   <a href="https://github.com/danielle707/StockX-Predictive-Modeling/graphs/contributors">
@@ -148,22 +148,28 @@
 <p><img src="/assets/images/alltime.png" width="240" /> <img src="/assets/images/allregion.png" width="240" /> <img src="/assets/images/allstyle.png" width="240" /></p>
 
 <ul>
-  <li><strong>Time effect on Top 3 Nike Brands</strong></li>
-</ul>
+  <li>
+    <p><strong>Time effect on Top 3 Nike Brands</strong></p>
 
-<p>The most sale Nike brands are Air Jordan, Presto and Zoom. Among these sneakers, Air Jordan has the highest premium even after long time. The common golden time period to have high price premium. are after day 200. White color has relative competitive premium against others.</p>
+    <p>The most sale Nike brands are Air Jordan, Presto and Zoom. Among these sneakers, Air Jordan has the highest premium even after long time. The common golden time period to have high price premium. are after day 200. White color has relative competitive premium against others.</p>
+  </li>
+</ul>
 
 <p><img src="/assets/images/timeaj.png" width="240" /> <img src="/assets/images/timepresto.png" width="240" /> <img src="/assets/images/timezoom.png" width="240" /></p>
 
 <ul>
-  <li><strong>Time effect on Yeezy</strong></li>
-</ul>
+  <li>
+    <p><strong>Time effect on Yeezy</strong></p>
 
-<p>It is worth notice that Different colors present different time pattern for Yeezy. Grey and Tan color have laggest 200 days after white and black color.</p>
+    <p>It is worth notice that Different colors present different time pattern for Yeezy. Grey and Tan color have laggest 200 days after white and black color.</p>
+  </li>
+</ul>
 
 <p><img src="/assets/images/timeyeezy.png" alt="timeyeezy" /></p>
 
-<p>The best time to sell in the secondary market is 3 to 5 weeks before the release date. The worst time to sell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are generally willing to pay higher premiums.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The best time to sell in the secondary market is 3 to 5 weeks before the release date. The worst time to sell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are generally willing to pay higher premiums. 
+</code></pre></div></div>
+
 <h3 id="color-feature">Color Feature</h3>
 
 <p>Our dataset consists of two major brands – yeezy and nike off-white. In terms of yeezy, we could see that basic colors including black, white, and grey have constant growth. Bolder colors like orange would start high but decline as time passes. In terms of off-white, red is the most popular color.</p>
@@ -194,9 +200,8 @@
   <li>
     <p><strong>Linear Model - Lasso</strong></p>
 
-    <p>According to our Exploratory Data Analysis, certain styles and colors (i.e. white) have over emphasizing power. In consideration of outliers and overfitting issues, we utilized the Lasso model to ensure regularization.</p>
-
-    <p align="center"><img align="center" src="/assets/images/lasso.svg" width="280" /></p>
+    <p>According to our Exploratory Data Analysis, certain styles and colors (i.e. white) have over emphasizing power. In consideration of outliers and overfitting issues, we utilized the Lasso model to ensure regularization.
+<img src="/assets/images/lasso.svg" width="280" align="center" /></p>
   </li>
 </ul>
 

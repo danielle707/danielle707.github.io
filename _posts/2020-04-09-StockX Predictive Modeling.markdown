@@ -16,7 +16,7 @@ categories: jekyll update
   <a href = "https://www.linkedin.com/in/zhidanwang/">
     <img class = "post image" src = "https://img.shields.io/badge/Linked-In-informational" align = "center"/>
   </a>
-  <a href = "https://github.com/danielle707/">
+  <a href = "https://github.com/danielle707/StockX-Predictive-Modeling">
     <img class = "post image" src = "https://img.shields.io/badge/GitHub-🍺-brightgreen" align = "center"/>
   </a>
   <a href = "https://github.com/danielle707/StockX-Predictive-Modeling/graphs/contributors">
@@ -100,17 +100,18 @@ Statistically, the best time to resell is 3 to 5 weeks before the release date 0
 
 - **Time effect on Top 3 Nike Brands**
 
-The most sale Nike brands are Air Jordan, Presto and Zoom. Among these sneakers, Air Jordan has the highest premium even after long time. The common golden time period to have high price premium. are after day 200. White color has relative competitive premium against others.
+  The most sale Nike brands are Air Jordan, Presto and Zoom. Among these sneakers, Air Jordan has the highest premium even after long time. The common golden time period to have high price premium. are after day 200. White color has relative competitive premium against others.
 
 <img src="/assets/images/timeaj.png" width="240"/> <img src="/assets/images/timepresto.png" width="240"/> <img src="/assets/images/timezoom.png" width="240"/> 
 
 - **Time effect on Yeezy**
 
-It is worth notice that Different colors present different time pattern for Yeezy. Grey and Tan color have laggest 200 days after white and black color.
+  It is worth notice that Different colors present different time pattern for Yeezy. Grey and Tan color have laggest 200 days after white and black color.
 
 ![timeyeezy](/assets/images/timeyeezy.png)
 
-The best time to sell in the secondary market is 3 to 5 weeks before the release date. The worst time to sell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are generally willing to pay higher premiums. 
+  The best time to sell in the secondary market is 3 to 5 weeks before the release date. The worst time to sell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are generally willing to pay higher premiums. 
+
 ### Color Feature
 
 Our dataset consists of two major brands – yeezy and nike off-white. In terms of yeezy, we could see that basic colors including black, white, and grey have constant growth. Bolder colors like orange would start high but decline as time passes. In terms of off-white, red is the most popular color.
@@ -138,18 +139,19 @@ In our project, we tried two types of machine learning models, linear and tree-b
 - **Linear Model - Lasso**
 
   According to our Exploratory Data Analysis, certain styles and colors (i.e. white) have over emphasizing power. In consideration of outliers and overfitting issues, we utilized the Lasso model to ensure regularization.
-<img src = "/assets/images/lasso.svg" width = "280" align = "center"/>
+  <p align = "center"><img src = "/assets/images/lasso.svg" width = "280" align = "center"/></p>
 
-```python
-lasso = Lasso()
-parameters = {'alpha': [1e-5,1e-4,1e-3,1e-2,1e-1,1e0,1e1,1e2,1e3,1e4,1e5]}
-r2 = make_scorer(r2_score, greater_is_better=True)
-clf = GridSearchCV(lasso, 
-                   parameters, 
-                   cv=5,
-                   scoring=r2)
-```
-To choose the optimal shrinkage parameter, we used cross validation, and the optimal shrinkage coefficient is ![Alt text](/assets/images/1e-6.svg?sanitize=true)
+  ```python
+  lasso = Lasso()
+  parameters = {'alpha': [1e-5,1e-4,1e-3,1e-2,1e-1,1e0,1e1,1e2,1e3,1e4,1e5]}
+  r2 = make_scorer(r2_score, greater_is_better=True)
+  clf = GridSearchCV(lasso, 
+                    parameters, 
+                    cv=5,
+                    scoring=r2)
+  ```
+
+  To choose the optimal shrinkage parameter, we used cross validation, and the optimal shrinkage coefficient is ![Alt text](/assets/images/1e-6.svg?sanitize=true)
 
 - **Linear Model - SVM**
 
@@ -188,7 +190,7 @@ To choose the optimal shrinkage parameter, we used cross validation, and the opt
   
   <img src = "/assets/images/xgboost_tree.png" width = "580"/>
 
-Though we have limited `max_depth` and `min_child_weight` , the optimal parameters are 4 and 5, gettting up combination more than the number of variables. Therefore the model is prone for overfitting in this case.
+  Though we have limited `max_depth` and `min_child_weight` , the optimal parameters are 4 and 5, gettting up combination more than the number of variables. Therefore the model is prone for overfitting in this case.
 
 #### Model Summary
 

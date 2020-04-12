@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-12T17:26:21-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Machine Learning Project Folder</title><subtitle>You stay classy!😊 Happy Blogging..:)</subtitle><entry><title type="html">StockX Price Premium Predictive Analysis</title><link href="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html" rel="alternate" type="text/html" title="StockX Price Premium Predictive Analysis" /><published>2020-04-08T08:42:17-04:00</published><updated>2020-04-08T08:42:17-04:00</updated><id>http://localhost:4000/jekyll/update/2020/04/08/StockX%20Predictive%20Modeling</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html">&lt;h1 align=&quot;center&quot;&gt;StockX Price Premium Predictive Analysis
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-12T18:01:04-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Machine Learning Project Folder</title><subtitle>You stay classy!😊 Happy Blogging..:)</subtitle><entry><title type="html">StockX Price Premium Predictive Analysis</title><link href="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html" rel="alternate" type="text/html" title="StockX Price Premium Predictive Analysis" /><published>2020-04-08T08:42:17-04:00</published><updated>2020-04-08T08:42:17-04:00</updated><id>http://localhost:4000/jekyll/update/2020/04/08/StockX%20Predictive%20Modeling</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html">&lt;h1 align=&quot;center&quot;&gt;StockX Price Premium Predictive Analysis
 &lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/banner.png&quot; alt=&quot;banner&quot; /&gt;&lt;/p&gt;
@@ -9,7 +9,7 @@
   &lt;a href=&quot;https://www.linkedin.com/in/zhidanwang/&quot;&gt;
     &lt;img class=&quot;post image&quot; src=&quot;https://img.shields.io/badge/Linked-In-informational&quot; align=&quot;center&quot; /&gt;
   &lt;/a&gt;
-  &lt;a href=&quot;https://github.com/danielle707/&quot;&gt;
+  &lt;a href=&quot;https://github.com/danielle707/StockX-Predictive-Modeling&quot;&gt;
     &lt;img class=&quot;post image&quot; src=&quot;https://img.shields.io/badge/GitHub-🍺-brightgreen&quot; align=&quot;center&quot; /&gt;
   &lt;/a&gt;
   &lt;a href=&quot;https://github.com/danielle707/StockX-Predictive-Modeling/graphs/contributors&quot;&gt;
@@ -148,22 +148,27 @@
 &lt;p&gt;&lt;img src=&quot;/assets/images/alltime.png&quot; width=&quot;240&quot; /&gt; &lt;img src=&quot;/assets/images/allregion.png&quot; width=&quot;240&quot; /&gt; &lt;img src=&quot;/assets/images/allstyle.png&quot; width=&quot;240&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Time effect on Top 3 Nike Brands&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Time effect on Top 3 Nike Brands&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;The most sale Nike brands are Air Jordan, Presto and Zoom. Among these sneakers, Air Jordan has the highest premium even after long time. The common golden time period to have high price premium. are after day 200. White color has relative competitive premium against others.&lt;/p&gt;
+    &lt;p&gt;The most sale Nike brands are Air Jordan, Presto and Zoom. Among these sneakers, Air Jordan has the highest premium even after long time. The common golden time period to have high price premium. are after day 200. White color has relative competitive premium against others.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/timeaj.png&quot; width=&quot;240&quot; /&gt; &lt;img src=&quot;/assets/images/timepresto.png&quot; width=&quot;240&quot; /&gt; &lt;img src=&quot;/assets/images/timezoom.png&quot; width=&quot;240&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Time effect on Yeezy&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Time effect on Yeezy&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;It is worth notice that Different colors present different time pattern for Yeezy. Grey and Tan color have laggest 200 days after white and black color.&lt;/p&gt;
+    &lt;p&gt;It is worth notice that Different colors present different time pattern for Yeezy. Grey and Tan color have laggest 200 days after white and black color.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/timeyeezy.png&quot; alt=&quot;timeyeezy&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The best time to sell in the secondary market is 3 to 5 weeks before the release date. The worst time to sell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are generally willing to pay higher premiums.&lt;/p&gt;
+
 &lt;h3 id=&quot;color-feature&quot;&gt;Color Feature&lt;/h3&gt;
 
 &lt;p&gt;Our dataset consists of two major brands – yeezy and nike off-white. In terms of yeezy, we could see that basic colors including black, white, and grey have constant growth. Bolder colors like orange would start high but decline as time passes. In terms of off-white, red is the most popular color.&lt;/p&gt;
@@ -195,22 +200,19 @@
     &lt;p&gt;&lt;strong&gt;Linear Model - Lasso&lt;/strong&gt;&lt;/p&gt;
 
     &lt;p&gt;According to our Exploratory Data Analysis, certain styles and colors (i.e. white) have over emphasizing power. In consideration of outliers and overfitting issues, we utilized the Lasso model to ensure regularization.&lt;/p&gt;
+    &lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/lasso.svg&quot; width=&quot;280&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;
 
-    &lt;p align=&quot;center&quot;&gt;&lt;img align=&quot;center&quot; src=&quot;/assets/images/lasso.svg&quot; width=&quot;280&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;lasso&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lasso&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;lasso&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lasso&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'alpha'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e-5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e-4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e-3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e-2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;make_scorer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r2_score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;greater_is_better&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GridSearchCV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lasso&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-                   &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-                   &lt;span class=&quot;n&quot;&gt;cv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                   &lt;span class=&quot;n&quot;&gt;scoring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;To choose the optimal shrinkage parameter, we used cross validation, and the optimal shrinkage coefficient is &lt;img src=&quot;/assets/images/1e-6.svg?sanitize=true&quot; alt=&quot;Alt text&quot; /&gt;&lt;/p&gt;
+                  &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+                  &lt;span class=&quot;n&quot;&gt;cv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                  &lt;span class=&quot;n&quot;&gt;scoring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
-&lt;ul&gt;
+    &lt;p&gt;To choose the optimal shrinkage parameter, we used cross validation, and the optimal shrinkage coefficient is &lt;img src=&quot;/assets/images/1e-6.svg?sanitize=true&quot; alt=&quot;Alt text&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Linear Model - SVM&lt;/strong&gt;&lt;/p&gt;
 
@@ -247,10 +249,10 @@
     &lt;p&gt;In hyper-parameter selection, &lt;code class=&quot;highlighter-rouge&quot;&gt;max_depth&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;min_child_weight&lt;/code&gt; is limited by the number of attributes, in our case, we give a range that have combination smaller than the variable count. The way of feature selection in XGRegression Tree is achieved by grid search &lt;code class=&quot;highlighter-rouge&quot;&gt;colsample_bytree&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;subsample&lt;/code&gt;.&lt;/p&gt;
 
     &lt;p&gt;&lt;img src=&quot;/assets/images/xgboost_tree.png&quot; width=&quot;580&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;Though we have limited &lt;code class=&quot;highlighter-rouge&quot;&gt;max_depth&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;min_child_weight&lt;/code&gt; , the optimal parameters are 4 and 5, gettting up combination more than the number of variables. Therefore the model is prone for overfitting in this case.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;Though we have limited &lt;code class=&quot;highlighter-rouge&quot;&gt;max_depth&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;min_child_weight&lt;/code&gt; , the optimal parameters are 4 and 5, gettting up combination more than the number of variables. Therefore the model is prone for overfitting in this case.&lt;/p&gt;
 
 &lt;h4 id=&quot;model-summary&quot;&gt;Model Summary&lt;/h4&gt;
 
