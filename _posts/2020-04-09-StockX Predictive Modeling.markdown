@@ -108,7 +108,7 @@ Statistically, the best time to resell is 3 to 5 weeks before the release date 0
 
   It is worth notice that Different colors present different time pattern for Yeezy. Grey and Tan color have laggest 200 days after white and black color.
 
-![timeyeezy](/assets/images/timeyeezy.png)
+  ![timeyeezy](/assets/images/timeyeezy.png)
 
   The best time to sell in the secondary market is 3 to 5 weeks before the release date. The worst time to sell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are generally willing to pay higher premiums. 
 
