@@ -1,58 +1,11 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>StockX Price Premium Preditive Analysis | Danielle’s Project Blog</title>
-<meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="StockX Price Premium Preditive Analysis" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="StockX Price Premium Preditive Analysis" />
-<meta property="og:description" content="StockX Price Premium Preditive Analysis" />
-<link rel="canonical" href="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html" />
-<meta property="og:url" content="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html" />
-<meta property="og:site_name" content="Danielle’s Project Blog" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-04-08T08:42:17-04:00" />
-<script type="application/ld+json">
-{"headline":"StockX Price Premium Preditive Analysis","dateModified":"2020-04-08T08:42:17-04:00","datePublished":"2020-04-08T08:42:17-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html"},"url":"http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html","description":"StockX Price Premium Preditive Analysis","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Danielle's Project Blog" /></head>
-<body><header class="site-header" role="banner">
-
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Danielle&#39;s Project Blog</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">StockX Price Premium Preditive Analysis</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="2020-04-08T08:42:17-04:00" itemprop="datePublished">Apr 8, 2020
-      </time></p>
-  </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <h1 align="center">StockX Price Premium Preditive Analysis
+I"vu<h1 align="center">StockX Price Premium Preditive Analysis
 </h1>
 
 <p><img src="/assets/images/banner.png" alt="banner" /></p>
 
 <h4 align="center">Use Machine Learning to learn undervalued sneakers</h4>
 
-<p><a href="https://www.linkedin.com/in/zhidanwang/"><img src="https://img.shields.io/badge/Linked-In-informational" /></a> <a href="https://github.com/danielle707/StockX-Predictive-Modeling"><img src="https://img.shields.io/badge/GitHub-🍺-brightgreen" /></a></p>
+<p><a href="https://www.linkedin.com/in/zhidanwang/"><img src="https://img.shields.io/badge/Linked-In-informational" /></a> <a href="https://github.com/danielle707/StockX-Predictive-Modeling"><img src="https://img.shields.io/badge/GitHub-🥃-brightgreen" /></a></p>
 
 <h2 id="prpject-overview">PRPJECT OVERVIEW</h2>
 
@@ -203,7 +156,7 @@
   <li><strong>Step 2</strong> Create anomaly lists and compare it to non-anomaly points</li>
 </ul>
 
-<p><img src="/assets/images/anomalycomp.png" /></p>
+<p><img align="left" src="assets/images/anomalycomp.png" /></p>
 
 <table>
   <thead>
@@ -251,13 +204,13 @@
 
 <p><strong>Region</strong> California and New York overall saw the highest price premium. However, this doesn’t mean these two states have the highest per capita premium. Stay around for further analysis in per capital level.</p>
 
-<p><img src="/assets/images/ano_brand.png" width="240" /> <img src="/assets/images/ano_color.png" width="240" /> <img src="/assets/images/ano_region.png" width="240" /></p>
+<p><img src="/assets/images/ano_brand.png" width="220" /> <img src="/assets/images/ano_color.png" width="220" /> <img src="/assets/images/ano_region.png" width="220" /></p>
 
 <h3 id="time-feature">Time Feature</h3>
 
 <p>Statistically, the best time to resell is 3 to 5 weeks before the release date 0. The worst time to resell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are willing to pay higher premiums.</p>
 
-<p><img src="/assets/images/alltime.png" width="240" /> <img src="/assets/images/allregion.png" width="240" /> <img src="/assets/images/allstyle.png" width="240" /></p>
+<p><img src="/assets/images/alltime.png" width="220" /> <img src="/assets/images/allregion.png" width="220" /> <img src="/assets/images/allstyle.png" width="250" /></p>
 
 <ul>
   <li><strong>Time effect on Top 3 Nike Brands</strong></li>
@@ -265,7 +218,7 @@
 
 <p>The most sale Nike brands are Air Jordan, Presto and Zoom. Among these sneakers, Air Jordan has the highest premium even after long time. The common golden time period to have high price premium. are after day 200. White color has relative competitive premium against others.</p>
 
-<p><img src="/assets/images/timeaj.png" width="240" /> <img src="/assets/images/timepresto.png" width="240" /> <img src="/assets/images/timezoom.png" width="240" /></p>
+<p><img src="/assets/images/timeaj.png" width="230" /> <img src="/assets/images/timepresto.png" width="230" /> <img src="/assets/images/timezoom.png" width="230" /></p>
 
 <ul>
   <li><strong>Time effect on Yeezy</strong></li>
@@ -308,7 +261,7 @@
 
     <p>According to our Exploratory Data Analysis, certain styles and colors (i.e. white) have over emphasizing power. In consideration of outliers and overfitting issues, we utilized the Lasso model to ensure regularization.</p>
 
-    <p><img align="center" src="/assets/images/lasso.svg" width="280" /></p>
+    <p>&lt;img align = “center” src = /assets/images/lasso.svg” width = “280”/&gt;</p>
   </li>
 </ul>
 
@@ -405,7 +358,7 @@
 
 <h2 id="prediction-result">Prediction Result</h2>
 
-<p>The Lasso coefficients are as above. Orange blocks represents negative coefficients, and blues represents positive coefficients. In terms of styles, AirJordan is the most lucrative, with an additional price premium of 324%. In terms of colors, red and tan will boost price premium, while blue seems to hurt resale prices. Further, as the number of sales increase, the price premium will go down. <img src="/assets/images/featureSig.png" alt="featureSig" /></p>
+<p>The Lasso coefficients are as above. Orange blocks represents negative coefficients, and blues represents positive coefficients. In terms of styles, AirJordan is the most lucrative, with an additional price premium of 324%. In terms of colors, red and tan will boost price premium, while blue seems to hurt resale prices. Further, as the number of sales increase, the price premium will go down. <img src="/assets/imagesfeatureSig.png" alt="featureSig" /></p>
 
 <p>According to our prediction model, sneakers of certain styles (i.e. AirJordan 1 and blazer) and of certain colors (i.e.red and tan) are the most investable. Based on this knowledge, we tried to find some undervalued sneakers, which we can invest in now  and sell higher later. We listed some proposed candidates below.</p>
 
@@ -422,18 +375,18 @@
   <tbody>
     <tr>
       <td style="text-align: center"><a href="https://stockx.com/air-jordan-1-retro-high-travis-scott">Air Jordan 1 Retro High Travis Scott</a></td>
-      <td style="text-align: left"><font size="2"><b> Features: </b>air-jordan(3.24)<br /> Tan/Brown(1.83) <br /><b>Current Price Premium: 497.4%</b><br /><b>Predicted Price Premium: 802.0%</b></font></td>
-      <td style="text-align: center"><img src="https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-Travis-Scott/Images/Air-Jordan-1-Retro-High-Travis-Scott/Lv2/img01.jpg?auto=format,compress&amp;w=559&amp;q=90&amp;dpr=2&amp;updated_at=1550180948" width="150" /></td>
+      <td style="text-align: left"><font size="2"><b> Features: </b>air-jordan(3.24)<br /> Tan/Brown(1.83) <br />**Current Price Premium: 497.4%** <br />**Predicted Price Premium: 802.0%**</font></td>
+      <td style="text-align: center"><img src="https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-Travis-Scott/Images/Air-Jordan-1-Retro-High-Travis-Scott/Lv2/img01.jpg?auto=format,compress&amp;w=559&amp;q=90&amp;dpr=2&amp;updated_at=1550180948" width="200" /></td>
     </tr>
     <tr>
       <td style="text-align: center"><a href="https://stockx.com/nike-blazer-mid-77-vintage-white-black">Blazer Mid 77 Vintage Slam Jam</a></td>
-      <td style="text-align: left"><font size="2"><b>Features: </b> blazer(0.58), White(0.71)<br /><b>Current Price Premium:</b> 381.0%**<br /><b>Predicted Price Premium: 455.5%</b>**</font></td>
-      <td style="text-align: center"><img src="https://stockx-360.imgix.net/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Images/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Lv2/img01.jpg?auto=format,compress&amp;w=559&amp;q=90&amp;dpr=2&amp;updated_at=1554253378" width="150" /></td>
+      <td style="text-align: left"><font size="2"><b>Features: </b> blazer(0.58), White(0.71)<br />**Current Price Premium: 381.0%**<br />**Predicted Price Premium: 455.5%**</font></td>
+      <td style="text-align: center"><img src="https://stockx-360.imgix.net/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Images/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Lv2/img01.jpg?auto=format,compress&amp;w=559&amp;q=90&amp;dpr=2&amp;updated_at=1554253378" width="200" /></td>
     </tr>
     <tr>
       <td style="text-align: center"><a href="https://stockx.com/adidas-yeezy-boost-350-v2-tail-light">Yeezy Boost 350 V2 Tail Light</a></td>
-      <td style="text-align: left"><font size="2"><b>Features:</b> blazer(0.58), White(0.71)<br /><b>Current Price Premium:</b> 381.0%**<br /><b>Predicted Price Premium: 455.5%</b></font></td>
-      <td style="text-align: center"><img src="https://stockx-360.imgix.net/adidas-Yeezy-Boost-350-V2-Tail-Light/Images/adidas-Yeezy-Boost-350-V2-Tail-Light/Lv2/img36.jpg?auto=format,compress&amp;w=559&amp;q=90&amp;dpr=2&amp;updated_at=1584757351" width="150" /></td>
+      <td style="text-align: left"><font size="2">**Features:** blazer(0.58), White(0.71)<br />**Current Price Premium: 381.0%**<br />**Predicted Price Premium: 455.5%**</font></td>
+      <td style="text-align: center"><img src="https://stockx-360.imgix.net/adidas-Yeezy-Boost-350-V2-Tail-Light/Images/adidas-Yeezy-Boost-350-V2-Tail-Light/Lv2/img36.jpg?auto=format,compress&amp;w=559&amp;q=90&amp;dpr=2&amp;updated_at=1584757351" width="200" /></td>
     </tr>
   </tbody>
 </table>
@@ -446,35 +399,4 @@
 
 **2. Brand Limitation** Since our data only covers two major brands -- Yeezy and Nike Off-White, it might not be appropriate to generalize our predictive model to other brands of sneakers.
 </font></h6>
-
-  </div><a class="u-url" href="/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html" hidden></a>
-</article>
-
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">Danielle&#39;s Project Blog</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Danielle&#39;s Project Blog</li><li><a class="u-email" href="mailto:daniellewang0707@gmail.com">daniellewang0707@gmail.com</a></li></ul>
-      </div>
-
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/danielle707"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">danielle707</span></a></li></ul>
-</div>
-
-      <div class="footer-col footer-col-3">
-        <p>Project Blogging..:)</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
-</body>
-
-</html>
+:ET

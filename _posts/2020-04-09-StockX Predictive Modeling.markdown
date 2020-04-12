@@ -5,11 +5,17 @@ date:   2020-04-08 08:42:17 -0400
 categories: jekyll update
 ---
 
+<h1 align="center">StockX Price Premium Preditive Analysis
+</h1>
+
 ![banner](/assets/images/banner.png)
 
-<h4 align="center">Use Machine Learning to learn undervalued sneakers.</h4>
+<h4 align="center">Use Machine Learning to learn undervalued sneakers</h4>                                                    
 
-## PROJECT OVERVIEW
+[<img src = "https://img.shields.io/badge/Linked-In-informational">](https://www.linkedin.com/in/zhidanwang/) [<img src = "https://img.shields.io/badge/GitHub-🍺-brightgreen">](https://github.com/danielle707/StockX-Predictive-Modeling) 
+
+
+## PRPJECT OVERVIEW
 
 - **ABSTRACT**: This project aims to investigate the features behind resale premiums on [StockX](https://stockx.com/sneakers) and their prediction power by conduct feature engineering and utilize external popularity index on different brands
 
@@ -32,7 +38,9 @@ categories: jekyll update
 |      **Blazer** Mid 77 Vintage Slam Jam(**White**)      | <img src="https://stockx-360.imgix.net/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Images/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Lv2/img01.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1554253378" width="200"/> |  $100  |   $470 - $486    |     381.0%      |    **455.5%**     |
 |   **Yeezy** Boost 350 V2 Tail Light(**Grey, Orange**)   | <img src="https://stockx-360.imgix.net/adidas-Yeezy-Boost-350-V2-Tail-Light/Images/adidas-Yeezy-Boost-350-V2-Tail-Light/Lv2/img36.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1584757351" width="200"/> |  $220  |   $289 - $336    |      31.8%      |     **82.0%**     |
 
-<h5 align="right">(*The price data below is based on March 26, 2020)</h5>
+<h6 align="right">The price data below is based on March 26, 2020 </h6>
+
+
 
 ## Table of Contents
 
@@ -49,8 +57,6 @@ categories: jekyll update
   - [Result](#result)
 * [Prediction Result](#prediction-result)
 * [Limitation](#limitation)
-* [Improvement](#improvement)
-* [Contributer](#contributer)
 
 ## Motivation
 
@@ -70,9 +76,11 @@ Table: Initial Data Preprosessing
 
 ## Exploratory Data Analysis
 
+Exploring the price premium in our dataset, we found the it's heavily skew to the right, and it condensed in the range(0,3), indicating most sales achieve 4 times transaction price over its original retail one. Notably, there are huge amounts of transactions happen in range beyond 5, heading over 20 times premium. Though some of them are within the reasonable curve, and we would first conduct anomaly detection to discover those anomaly points and found out common features among those points.
+
 Looking at price premium, we could easily observe that it is heavily skewed to the right. Most resale transactions were marked up between 0% to 500%, yet there are some extreme transactions whose markups were over 2000%. As such, we would first conduct anomaly detection to examine those points on the very high end and find common features among them.
 
-<img src="/assets/images/y_plot.png" width="350"/> <img src="/assets/images/volinplot.png" width="340"/> 
+<img src = "/assets/images/y_plot.png" width="300"/> <img src = "/assets/images/volinplot.png" width = "300"/>
 
 ### Anomaly Detection
 
@@ -93,16 +101,18 @@ y['anomaly']=model.predict(y[['Pct_change']])
 
 - **Step 2** Create anomaly lists and compare it to non-anomaly points
 
-<img align="left" src="/assets/images/anomalycomp.png"> 
+<img src="/assets/images/anomalycomp.png"/> 
 
 | Metric | whole | normal | Anamoly |
 | :----: | :---: | :----: | :-----: |
 |  Mean  | 1.25  |  1.03  |  5.40   |
 | Median | 0.70  |  0.68  |  5.00   |
 
-Most anomaly points lie on the right tail of the distribution, and their cut-off (using median statistics) is approximately exp(5). This indicates that our data becomes noiser at higher price premiums. As such, we would next group these anomly points by brand, by color, and by region to get some further insights of our dataset.
+Most Anomaly points lie on the right tail of distribution, and their cut-off(using median statistics) is approximately exp(5), this is a cruicial indicator that if our prediction is beyond 100 times premium, there is large probability the point is an outlier and some statistically important features are underneath the pair of shoe. 
 
 - **Step 3** Explore anomaly points
+
+Group anomaly points on their three features: brand, color and region, we could peek into what features are heavily weighted in our dataset.
 
 **Style** The top three styles that saw extreme resale prices are Air Jordan, Presto, and Blazer. Note that these are all Nike sneakers. Among them, Air Jordan saw the highest price premium of over 2000%. Yeezy sneakers followed at the fourth place.
 
@@ -115,22 +125,27 @@ To test our hypothesis, we will further examine which specific sneakers contribu
 
 **Region** California and New York overall saw the highest price premium. However, this doesn't mean these two states have the highest per capita premium. Stay around for further analysis in per capital level.
 
-<img src="/assets/images/ano_brand.png" width="230"/> <img src="/assets/images/ano_color.png" width="230"/> <img src="/assets/images/ano_region.png" width="230"/> 
+<img src="/assets/images/ano_brand.png" width="240"/> <img src="/assets/images/ano_color.png" width="240"/> <img src="/assets/images/ano_region.png" width="240"/> 
 
 ### Time Feature
 
-<img src="/assets/images/allregion.png" width="330"/> <img src="/assets/images/allstyle.png" width="360"/> 
+Statistically, the best time to resell is 3 to 5 weeks before the release date 0. The worst time to resell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are willing to pay higher premiums. 
 
-- **Time Effect on Top 3 Nike brands**
+<img src="/assets/images/alltime.png" width="240"/> <img src="/assets/images/allregion.png" width="240"/> <img src="/assets/images/allstyle.png" width="240"/> 
 
-<img src="/assets/images/allnike.png" width="340"/> <img src="/assets/images/timeaj.png" width="340"/> <img src="/assets/images/timepresto.png" width="340"/> <img src="/assets/images/timezoom.png" width="340"/> 
+- **Time effect on Top 3 Nike Brands**
+
+The most sale Nike brands are Air Jordan, Presto and Zoom. Among these sneakers, Air Jordan has the highest premium even after long time. The common golden time period to have high price premium. are after day 200. White color has relative competitive premium against others.
+
+<img src="/assets/images/timeaj.png" width="240"/> <img src="/assets/images/timepresto.png" width="240"/> <img src="/assets/images/timezoom.png" width="240"/> 
 
 - **Time effect on Yeezy**
 
+It is worth notice that Different colors present different time pattern for Yeezy. Grey and Tan color have laggest 200 days after white and black color.
+
 ![timeyeezy](/assets/images/timeyeezy.png)
 
-Statistically, the best time to sell in the secondary market is 3 to 5 weeks before the release date. The worst time to sell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are generally willing to pay higher premiums. 
-
+The best time to sell in the secondary market is 3 to 5 weeks before the release date. The worst time to sell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are generally willing to pay higher premiums. 
 ### Color Feature
 
 Our dataset consists of two major brands – yeezy and nike off-white. In terms of yeezy, we could see that basic colors including black, white, and grey have constant growth. Bolder colors like orange would start high but decline as time passes. In terms of off-white, red is the most popular color.
@@ -157,24 +172,20 @@ In our project, we tried two types of machine learning models, linear and tree-b
 
 - **Linear Model - Lasso**
 
-According to our Exploratory Data Analysis, certain styles and colors (i.e. white) have over emphasizing power. In consideration of outliers and overfitting issues, we utilized the Lasso model to ensure regularization.
+  According to our Exploratory Data Analysis, certain styles and colors (i.e. white) have over emphasizing power. In consideration of outliers and overfitting issues, we utilized the Lasso model to ensure regularization.
 
-$$
-\sum_{i=1}^{n}\left(y_{i}-\widehat{y}_{i}\right)^{2} + \lambda \quad \times \sum_{i}^{p}\left|\beta_{j}\right|
-$$
+  <img align = "center" src = "/assets/images/lasso.svg" width = "280"/>
 
-To choose the optimal shrinkage parameter, we used cross validation. The optimal shrinkage coefficient is $10^{-6}$
-
-
-  ```python
-  lasso = Lasso()
-  parameters = {'alpha': [1e-5,1e-4,1e-3,1e-2,1e-1,1e0,1e1,1e2,1e3,1e4,1e5]}
-  r2 = make_scorer(r2_score, greater_is_better=True)
-  clf = GridSearchCV(lasso, 
-                     parameters, 
-                     cv=5,
-                     scoring=r2)
-  ```
+```python
+lasso = Lasso()
+parameters = {'alpha': [1e-5,1e-4,1e-3,1e-2,1e-1,1e0,1e1,1e2,1e3,1e4,1e5]}
+r2 = make_scorer(r2_score, greater_is_better=True)
+clf = GridSearchCV(lasso, 
+                   parameters, 
+                   cv=5,
+                   scoring=r2)
+```
+To choose the optimal shrinkage parameter, we used cross validation, and the optimal shrinkage coefficient is ![Alt text](/assets/images/1e-6.svg?sanitize=true)
 
 - **Linear Model - SVM**
 
@@ -191,6 +202,8 @@ To choose the optimal shrinkage parameter, we used cross validation. The optimal
 
 - **Tree-based - XGBoost**
 
+  XGBoost model comes in handy when dealing with nan value in datasets, in this project, we tuned parameters in XG Regression Tree to get prediction on our dataset. 
+  
   ```python
   params = {'colsample_bytree': [i/10. for i in range(8,11)],
             'subsample': [i/10. for i in range(8,11)],
@@ -204,51 +217,43 @@ To choose the optimal shrinkage parameter, we used cross validation. The optimal
   clf = GridSearchCV(xg_reg, 
                      params, 
                      cv=5, 
-                     scoring=r2)
+                   scoring=r2)
   ```
-
-  <img src="/assets/images/xgboost_featureSig.png"/>
   
-  <img src = "/assets/images/xgboost_tree.png"/>
+  In hyper-parameter selection, `max_depth` and `min_child_weight` is limited by the number of attributes, in our case, we give a range that have combination smaller than the variable count. The way of feature selection in XGRegression Tree is achieved by grid search `colsample_bytree` and `subsample`.
+  
+  <img src = "/assets/images/xgboost_tree.png" width = "580"/>
 
+Though we have limited `max_depth` and `min_child_weight` , the optimal parameters are 4 and 5, gettting up combination more than the number of variables. Therefore the model is prone for overfitting in this case.
 
 #### Model Summary
 
-|                   Model                    |                  r2 score                  | MSE                                      | Features                                                     |
-| :----------------------------------------: | :----------------------------------------: | ---------------------------------------- | ------------------------------------------------------------ |
-| <span style="color:blue">**Lasso** </span> | <span style="color:blue">**0.7810**</span> | <span style="color:blue">**0.51**</span> | <span style="color:blue">**`Days_Since_Release`:(+); `yeezy`: (-) `airjordan` :(+)**</span> |
-|                    SVM                     |                   0.7508                   | 0.39                                     | /                                                            |
-|                  XGBoost                   |                   0.9671                   | 0.04                                     | `Days_Since_Release`; `size_freq`; `Number_of_Sales`         |
-
+|                   Model                    |                 r2 score                 | MSE                                      | Pros                                                         | Cons             |
+| :----------------------------------------: | :--------------------------------------: | ---------------------------------------- | ------------------------------------------------------------ | ---------------- |
+| <span style="color:blue">**Lasso** </span> | <span style="color:blue">**0.78**</span> | <span style="color:blue">**0.51**</span> | Easy to interpret, handle overfitting, handle multicollinearity | Weak in outliers |
+|                    SVM                     |                   0.75                   | 0.39                                     | Memory efficient, fast, accurate in high dimensions          | Overfitting      |
+|                  XGBoost                   |                   0.96                   | 0.04                                     | High `r_square`, clear tree structure                        | Overfitting      |
 
 According to our modeling results, XGBoost has the highest R2. However, the XGBoost model is considered overfitted given that we have 31 features but less than 100,000 data points. The other two models, Lasso and SVM, are comparable in terms of predictive power. Further, the lasso model is more intrepretable as it allows us to easily examine constant effect of a predictor variables on price premiums. As such, taking both predictive power and model interpretability into account, we decided to proceed with the lasso model. Below is a summary of our fitted lasso model.
 
-  ![featureSig](/assets/images/featureSig.png)
-
-The Lasso coefficients are as above. Orange blocks represents negative coefficients, and blues represents positive coefficients. In terms of styles, AirJordan is the most lucrative, with an additional price premium of 324%. In terms of colors, red and tan will boost price premium, while blue seems to hurt resale prices. Further, as the number of sales increase, the price premium will go down. This could be explained by the value of scarcity.
-
 ## Prediction Result
+
+The Lasso coefficients are as above. Orange blocks represents negative coefficients, and blues represents positive coefficients. In terms of styles, AirJordan is the most lucrative, with an additional price premium of 324%. In terms of colors, red and tan will boost price premium, while blue seems to hurt resale prices. Further, as the number of sales increase, the price premium will go down. ![featureSig](/assets/images/featureSig.png)
 
 According to our prediction model, sneakers of certain styles (i.e. AirJordan 1 and blazer) and of certain colors (i.e.red and tan) are the most investable. Based on this knowledge, we tried to find some undervalued sneakers, which we can invest in now  and sell higher later. We listed some proposed candidates below. 
 
 The first pair listed is Air Jordan 1 by Travis Scott, released in May, 2019. If you are a sneakerhead, you probably already know that this is a popular pair. The question is, given the current resale price, could the price go up even higher. The answer is YES! This pair is selling at 500% markup as of early April, while our model predicts that the markup should have been 800%. As such, there is an arbitrage opportunity here, which would turn into a profit of over $500 on a single pair. The other candidates would follow similarly.
 
-
-|               Sneaker(predicted on 03/26/2020)               | Feature                                                      |                            Image                             |
+|                           Sneaker                            | Feature                                                      |                            Image                             |
 | :----------------------------------------------------------: | :----------------------------------------------------------- | :----------------------------------------------------------: |
-| [Air Jordan 1 Retro High Travis Scott](https://stockx.com/air-jordan-1-retro-high-travis-scott) | <font size="2"> **Feature:** air-jordan(3.24)<br/> Tan/Brown(1.83) <br/>**Current Price Premium: 497.4%** <br/>**Predicted Price Premium: 802.0%**</font> | <img src="https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-Travis-Scott/Images/Air-Jordan-1-Retro-High-Travis-Scott/Lv2/img01.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1550180948" width="200"/> |
-| [Blazer Mid 77 Vintage Slam Jam](https://stockx.com/nike-blazer-mid-77-vintage-white-black) | <font size = "2">**Features: **blazer(0.58), White(0.71)<br>**Current Price Premium: 381.0%**<br>**Predicted Price Premium: 455.5%**</font> | <img src="https://stockx-360.imgix.net/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Images/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Lv2/img01.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1554253378" width="200"/> |
-| [Yeezy Boost 350 V2 Tail Light](https://stockx.com/adidas-yeezy-boost-350-v2-tail-light) | <font size = "2">**Features:** blazer(0.58), White(0.71)<br>**Current Price Premium: 381.0%**<br>**Predicted Price Premium: 455.5%**</font> | <img src="https://stockx-360.imgix.net/adidas-Yeezy-Boost-350-V2-Tail-Light/Images/adidas-Yeezy-Boost-350-V2-Tail-Light/Lv2/img36.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1584757351" width="200"/> |
+| [Air Jordan 1 Retro High Travis Scott](https://stockx.com/air-jordan-1-retro-high-travis-scott) | <font size="2"><b> Features: </b>air-jordan(3.24)<br/> Tan/Brown(1.83) <br/><b>Current Price Premium: 497.4%</b><br/><b>Predicted Price Premium: 802.0%</b></font> | <img src="https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-Travis-Scott/Images/Air-Jordan-1-Retro-High-Travis-Scott/Lv2/img01.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1550180948" width="150"/> |
+| [Blazer Mid 77 Vintage Slam Jam](https://stockx.com/nike-blazer-mid-77-vintage-white-black) | <font size = "2"><b>Features: </b> blazer(0.58), White(0.71)<br><b>Current Price Premium:</b> 381.0%**<br><b>Predicted Price Premium: 455.5%</b>**</font> | <img src="https://stockx-360.imgix.net/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Images/Nike-Blazer-Mid-77-Vintage-Slam-Jam/Lv2/img01.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1554253378" width="150"/> |
+| [Yeezy Boost 350 V2 Tail Light](https://stockx.com/adidas-yeezy-boost-350-v2-tail-light) | <font size = "2"><b>Features:</b> blazer(0.58), White(0.71)<br><b>Current Price Premium:</b> 381.0%**<br><b>Predicted Price Premium: 455.5%</b></font> | <img src="https://stockx-360.imgix.net/adidas-Yeezy-Boost-350-V2-Tail-Light/Images/adidas-Yeezy-Boost-350-V2-Tail-Light/Lv2/img36.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1584757351" width="150"/> |
+
+<h6 align="right"><font size="2">*The price data below is based on March 26, 2020</h6> 
 
 ## Limitation
 
 **1. Time Limitation** The data we utilized only cover sales from 2017 to 2019. Due to the changing tendency of the sneaker resale market, the model’s predictive power might be less stable in far futures.
 
 **2. Brand Limitation** Since our data only covers two major brands -- Yeezy and Nike Off-White, it might not be appropriate to generalize our predictive model to other brands of sneakers.
-
-## Further Improvement
-
-1. Time Series consideration, 
-2. DNN Model
-
-## Contributer
