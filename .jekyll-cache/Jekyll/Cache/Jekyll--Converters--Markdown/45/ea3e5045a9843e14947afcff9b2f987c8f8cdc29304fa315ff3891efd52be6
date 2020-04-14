@@ -1,4 +1,4 @@
-I"<b<h1 align="center">StockX Price Premium Predictive Analysis
+I"Gd<h1 align="center">StockX Price Premium Predictive Analysis
 </h1>
 
 <p><img src="/assets/images/banner.png" alt="banner" /></p>
@@ -17,7 +17,7 @@
   </a>
 </p>
 
-<h2 id="prpject-overview">PRPJECT OVERVIEW</h2>
+<h2 id="project-overview">PROJECT OVERVIEW</h2>
 
 <ul>
   <li>
@@ -117,6 +117,7 @@
   </li>
   <li><a href="#prediction-result">Prediction Result</a></li>
   <li><a href="#limitation">Limitation</a></li>
+  <li><a href="#connect-with-me">Connect with Me</a></li>
 </ul>
 
 <h2 id="motivation">Motivation</h2>
@@ -162,12 +163,12 @@
     <p><strong>Time effect on Yeezy</strong></p>
 
     <p>It is worth notice that Different colors present different time pattern for Yeezy. Grey and Tan color have laggest 200 days after white and black color.</p>
+
+    <p><img src="/assets/images/timeyeezy.png" alt="timeyeezy" /></p>
+
+    <p>The best time to sell in the secondary market is 3 to 5 weeks before the release date. The worst time to sell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are generally willing to pay higher premiums.</p>
   </li>
 </ul>
-
-<p><img src="/assets/images/timeyeezy.png" alt="timeyeezy" /></p>
-
-<p>The best time to sell in the secondary market is 3 to 5 weeks before the release date. The worst time to sell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are generally willing to pay higher premiums.</p>
 
 <h3 id="color-feature">Color Feature</h3>
 
@@ -199,22 +200,20 @@
   <li>
     <p><strong>Linear Model - Lasso</strong></p>
 
-    <p>According to our Exploratory Data Analysis, certain styles and colors (i.e. white) have over emphasizing power. In consideration of outliers and overfitting issues, we utilized the Lasso model to ensure regularization.
-<img src="/assets/images/lasso.svg" width="280" align="center" /></p>
-  </li>
-</ul>
+    <p>According to our Exploratory Data Analysis, certain styles and colors (i.e. white) have over emphasizing power. In consideration of outliers and overfitting issues, we utilized the Lasso model to ensure regularization.</p>
+    <p align="center"><img src="/assets/images/lasso.svg" width="280" align="center" /></p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">lasso</span> <span class="o">=</span> <span class="n">Lasso</span><span class="p">()</span>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">lasso</span> <span class="o">=</span> <span class="n">Lasso</span><span class="p">()</span>
 <span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s">'alpha'</span><span class="p">:</span> <span class="p">[</span><span class="mf">1e-5</span><span class="p">,</span><span class="mf">1e-4</span><span class="p">,</span><span class="mf">1e-3</span><span class="p">,</span><span class="mf">1e-2</span><span class="p">,</span><span class="mf">1e-1</span><span class="p">,</span><span class="mf">1e0</span><span class="p">,</span><span class="mf">1e1</span><span class="p">,</span><span class="mf">1e2</span><span class="p">,</span><span class="mf">1e3</span><span class="p">,</span><span class="mf">1e4</span><span class="p">,</span><span class="mf">1e5</span><span class="p">]}</span>
 <span class="n">r2</span> <span class="o">=</span> <span class="n">make_scorer</span><span class="p">(</span><span class="n">r2_score</span><span class="p">,</span> <span class="n">greater_is_better</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="n">clf</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">lasso</span><span class="p">,</span> 
-                   <span class="n">parameters</span><span class="p">,</span> 
-                   <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-                   <span class="n">scoring</span><span class="o">=</span><span class="n">r2</span><span class="p">)</span>
-</code></pre></div></div>
-<p>To choose the optimal shrinkage parameter, we used cross validation, and the optimal shrinkage coefficient is <img src="/assets/images/1e-6.svg?sanitize=true" alt="Alt text" /></p>
+                  <span class="n">parameters</span><span class="p">,</span> 
+                  <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+                  <span class="n">scoring</span><span class="o">=</span><span class="n">r2</span><span class="p">)</span>
+</code></pre></div>    </div>
 
-<ul>
+    <p>To choose the optimal shrinkage parameter, we used cross validation, and the optimal shrinkage coefficient is <img src="/assets/images/1e-6.svg?sanitize=true" alt="Alt text" /></p>
+  </li>
   <li>
     <p><strong>Linear Model - SVM</strong></p>
 
@@ -251,10 +250,10 @@
     <p>In hyper-parameter selection, <code class="highlighter-rouge">max_depth</code> and <code class="highlighter-rouge">min_child_weight</code> is limited by the number of attributes, in our case, we give a range that have combination smaller than the variable count. The way of feature selection in XGRegression Tree is achieved by grid search <code class="highlighter-rouge">colsample_bytree</code> and <code class="highlighter-rouge">subsample</code>.</p>
 
     <p><img src="/assets/images/xgboost_tree.png" width="580" /></p>
+
+    <p>Though we have limited <code class="highlighter-rouge">max_depth</code> and <code class="highlighter-rouge">min_child_weight</code> , the optimal parameters are 4 and 5, gettting up combination more than the number of variables. Therefore the model is prone for overfitting in this case.</p>
   </li>
 </ul>
-
-<p>Though we have limited <code class="highlighter-rouge">max_depth</code> and <code class="highlighter-rouge">min_child_weight</code> , the optimal parameters are 4 and 5, gettting up combination more than the number of variables. Therefore the model is prone for overfitting in this case.</p>
 
 <h4 id="model-summary">Model Summary</h4>
 
@@ -338,4 +337,9 @@
 <p><strong>1. Time Limitation</strong> The data we utilized only cover sales from 2017 to 2019. Due to the changing tendency of the sneaker resale market, the model’s predictive power might be less stable in far futures.</p>
 
 <p><strong>2. Brand Limitation</strong> Since our data only covers two major brands – Yeezy and Nike Off-White, it might not be appropriate to generalize our predictive model to other brands of sneakers.</p>
+
+<h2 id="connect-with-me">Connect with Me</h2>
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async="" defer=""></script>
+
+<div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="zh_CN" data-type="horizontal" data-theme="dark" data-vanity="zhidanwang"><a class="LI-simple-link" href="https://www.linkedin.com/in/zhidanwang?trk=profile-badge">Zhidan Wang</a></div>
 :ET

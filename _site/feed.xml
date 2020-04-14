@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-12T18:01:04-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Machine Learning Project Folder</title><subtitle>You stay classy!😊 Happy Blogging..:)</subtitle><entry><title type="html">StockX Price Premium Predictive Analysis</title><link href="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html" rel="alternate" type="text/html" title="StockX Price Premium Predictive Analysis" /><published>2020-04-08T08:42:17-04:00</published><updated>2020-04-08T08:42:17-04:00</updated><id>http://localhost:4000/jekyll/update/2020/04/08/StockX%20Predictive%20Modeling</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html">&lt;h1 align=&quot;center&quot;&gt;StockX Price Premium Predictive Analysis
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-14T18:24:05-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Zhidan’s Project Folder</title><subtitle>You stay classy!😊 Happy Blogging..:)</subtitle><entry><title type="html">StockX Price Premium Predictive Analysis</title><link href="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html" rel="alternate" type="text/html" title="StockX Price Premium Predictive Analysis" /><published>2020-04-08T08:42:17-04:00</published><updated>2020-04-08T08:42:17-04:00</updated><id>http://localhost:4000/jekyll/update/2020/04/08/StockX%20Predictive%20Modeling</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/08/StockX-Predictive-Modeling.html">&lt;h1 align=&quot;center&quot;&gt;StockX Price Premium Predictive Analysis
 &lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/banner.png&quot; alt=&quot;banner&quot; /&gt;&lt;/p&gt;
@@ -17,7 +17,7 @@
   &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;h2 id=&quot;prpject-overview&quot;&gt;PRPJECT OVERVIEW&lt;/h2&gt;
+&lt;h2 id=&quot;project-overview&quot;&gt;PROJECT OVERVIEW&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -162,12 +162,12 @@
     &lt;p&gt;&lt;strong&gt;Time effect on Yeezy&lt;/strong&gt;&lt;/p&gt;
 
     &lt;p&gt;It is worth notice that Different colors present different time pattern for Yeezy. Grey and Tan color have laggest 200 days after white and black color.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/timeyeezy.png&quot; alt=&quot;timeyeezy&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;The best time to sell in the secondary market is 3 to 5 weeks before the release date. The worst time to sell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are generally willing to pay higher premiums.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/timeyeezy.png&quot; alt=&quot;timeyeezy&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The best time to sell in the secondary market is 3 to 5 weeks before the release date. The worst time to sell is the first 9 weeks after release, when the market is saturated. After that, as the availability in market declines, buyers are generally willing to pay higher premiums.&lt;/p&gt;
 
 &lt;h3 id=&quot;color-feature&quot;&gt;Color Feature&lt;/h3&gt;
 

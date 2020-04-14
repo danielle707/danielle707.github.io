@@ -25,7 +25,6 @@ categories: jekyll update
 </p>
 
 
-
 ## PROJECT OVERVIEW
 
 - **ABSTRACT**: This project aims to investigate the features behind resale premiums on [StockX](https://stockx.com/sneakers) and their prediction power by conduct feature engineering and utilize external popularity index on different brands
@@ -224,3 +223,4 @@ The first pair listed is Air Jordan 1 by Travis Scott, released in May, 2019. If
 **1. Time Limitation** The data we utilized only cover sales from 2017 to 2019. Due to the changing tendency of the sneaker resale market, the model’s predictive power might be less stable in far futures.
 
 **2. Brand Limitation** Since our data only covers two major brands -- Yeezy and Nike Off-White, it might not be appropriate to generalize our predictive model to other brands of sneakers.
+
