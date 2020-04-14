@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Machine Learning Project Folder
+title: Zhidan's Project Folder
 email: daniellewang0707@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   You stay classy!😊 Happy Blogging..:)
